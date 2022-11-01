@@ -15,8 +15,7 @@ body {
 }
 
 img {
-  width: 1280px;
-  height: 720px;
+  width: 100%;
   object-fit: cover;
 }
 
@@ -37,7 +36,7 @@ nav {
   justify-content: center;
   background-color: #2a2929;
   border-radius: 40px;
-  width: 1000px;
+  width: 800px;
   height: 90px;
   display: flex;
   align-items: center;
@@ -49,15 +48,23 @@ button {
 }
 h1 {
   color: white;
-  margin: 10px;
+  margin: 5px;
 }
 
 p {
   color: white;
   margin: 10px;
-  font-size: 20px;
+  font-size: 15px;
 }
-
+.imageWrapper {
+  max-width: 800px;
+  max-height: 449px;
+  height: auto;
+  border-radius: 40px;
+  width: auto;
+  margin: auto;
+  overflow: hidden;
+}
 .leftArrow {
   cursor: pointer;
 }
@@ -88,6 +95,8 @@ p {
 }
 
 .container {
+  max-width: 1000px;
+  margin: auto;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -100,31 +109,26 @@ p {
 
 .navImages button img {
   height: 60px;
-  width: 160px;
+  width: 130px;
   border-radius: 40px;
   display: flex;
   flex-grow: 1;
   transition: 0.4s;
 }
 
-.mainImage img {
-  border-radius: 40px;
-}
-
 .mainImage .description {
-  height: 150px;
+  height: 130px;
   position: absolute;
   background-color: #0000008f;
   border: solid 1px white;
-  width: 640px;
-
+  width: 400px;
   border-radius: 40px;
   padding-left: 10px;
 }
 
 .navImages button img:hover {
   height: 80px;
-  width: 180px;
+  width: 150px;
   transition: 0.4s;
 }
 
@@ -141,7 +145,7 @@ p {
   padding: 10px;
   border-radius: 20px;
   left: 50%;
-  top: -80px;
+  top: -70px;
   transform: translateX(-50%);
 }
 .active img {

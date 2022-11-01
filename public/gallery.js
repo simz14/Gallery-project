@@ -25,6 +25,7 @@ description.appendChild(desText)
 //ADDING IMAGE TO UL
 const mainImgae =images[0]
 const newSlide = document.createElement("div")
+newSlide.className="imageWrapper"
 
 const img =document.createElement("img")
 img.src=imagesLinks[0]
